@@ -165,9 +165,12 @@ CODSOFT_TASKSNO/
 - [x] **≥3 tasks completed** (3/5)
 - [x] **GitHub repo named `CODSOFT_TASKSNO`**
 - [x] **Live demo deployed** (Streamlit Cloud)
-- [ ] **Video demo** — Record terminal + web app
-- [ ] **LinkedIn post** — Add `#codsoft`, tag `@CODSOFT`, include repo link
-- [ ] **Submit Google Form** — Link emailed by CodSoft
+- [x] **Video demos recorded** — Terminal + Web app
+- [x] **LinkedIn posts published** with `#codsoft`
+  - Task 1: [Chatbot Demo](https://www.linkedin.com/posts/ashish138_ai-python-machinelearning-activity-7491823143959842816-r8-B)
+  - Task 2: [Tic-Tac-Toe AI Demo](https://www.linkedin.com/posts/ashish138_ai-python-minimax-activity-7491821439160066049-iyya)
+  - Task 4: [Recommendation System Demo](https://www.linkedin.com/posts/ashish138_ai-machinelearning-python-activity-7491822709484679168-45ye)
+- [x] **Google Form submitted** — Internship completion
 
 ---
 
