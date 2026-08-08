@@ -113,6 +113,12 @@ CODSOFT_TASKSNO/
 
 ---
 
+## 🌐 Live Demo
+
+**Streamlit Cloud:** https://codsofttasks.streamlit.app/
+
+---
+
 ## 📄 License
 
 Educational project — CodSoft AI Internship 2026
