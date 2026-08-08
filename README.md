@@ -1,20 +1,34 @@
-# CODSOFT_TASKSNO — CodSoft AI Internship Tasks
+# CODSOFT_TASKSNO
 
-This repository contains **3 completed tasks** for the CodSoft Artificial Intelligence Virtual Internship.
+**CodSoft AI Virtual Internship — Completed Tasks**
 
-> **Internship Requirement:** Complete at least 3 tasks from the 5 provided. ✅ **DONE**
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
+[![License](https://img.shields.io/badge/License-Educational-green.svg)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Complete-brightgreen.svg)]()
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Streamlit_Cloud-FF4B4B.svg)](https://codsofttasks.streamlit.app/)
 
 ---
 
-## 📋 Tasks Completed
+## 📋 Overview
 
-| Task | Title | Description | Status |
-|------|-------|-------------|--------|
-| **1** | Chatbot with Rule-Based Responses | Pattern-matching chatbot with greetings, time, jokes, help, and more | ✅ Complete |
-| **2** | Tic-Tac-Toe AI | Unbeatable AI using Minimax with Alpha-Beta Pruning | ✅ Complete |
-| **4** | Recommendation System | Hybrid recommender (Collaborative + Content-Based filtering) | ✅ Complete |
+This repository contains **3 completed tasks** for the **CodSoft Artificial Intelligence Virtual Internship**.  
+**Requirement:** Complete at least 3 out of 5 tasks — ✅ **Done**
 
-**Tasks not implemented (optional):** Task 3 - Image Captioning, Task 5 - Face Detection & Recognition
+| Task | Title | Core Concept | Status |
+|------|-------|--------------|--------|
+| **1** | Rule-Based Chatbot | Regex pattern matching, NLP basics | ✅ Complete |
+| **2** | Tic-Tac-Toe AI | Minimax + Alpha-Beta Pruning | ✅ Complete |
+| **4** | Recommendation System | Collaborative + Content-Based + Hybrid | ✅ Complete |
+
+> **Not implemented (optional):** Task 3 — Image Captioning, Task 5 — Face Detection & Recognition
+
+---
+
+## 🌐 Live Demo
+
+**Streamlit Web App:** https://codsofttasks.streamlit.app/
+
+Interactive browser version with all 3 tasks accessible via sidebar navigation.
 
 ---
 
@@ -22,36 +36,64 @@ This repository contains **3 completed tasks** for the CodSoft Artificial Intell
 
 ### Prerequisites
 - Python 3.8+
-- No external dependencies for Task 1 & 2 (stdlib only)
-- Task 4 requires: `numpy`, `pandas`
+- Task 1 & 2: **No external dependencies** (stdlib only)
+- Task 4: `numpy`, `pandas`
 
 ```bash
+# Clone the repository
+git clone https://github.com/ashishkushwaha138/CODSOFT_TASKSNO.git
+cd CODSOFT_TASKSNO
+
 # Install Task 4 dependencies
 pip install numpy pandas
 ```
 
-### Run Task 1: Rule-Based Chatbot
+### Run Locally
+
+<details>
+<summary><strong>Task 1: Rule-Based Chatbot</strong></summary>
+
 ```bash
 cd task1_chatbot
-python chatbot.py              # Interactive chat
-python chatbot.py --demo       # Quick demo run
-```
 
-### Run Task 2: Tic-Tac-Toe AI
+# Interactive chat
+python chatbot.py
+
+# Auto-demo (7 test cases)
+python chatbot.py --demo
+```
+</details>
+
+<details>
+<summary><strong>Task 2: Tic-Tac-Toe AI</strong></summary>
+
 ```bash
 cd task2_tictactoe
-python tictactoe_ai.py                    # Play against AI (you go first)
-python tictactoe_ai.py --play --ai-first  # AI goes first
-python tictactoe_ai.py --demo             # AI vs AI perfect play demo
-python tictactoe_ai.py --benchmark        # Minimax vs Alpha-Beta benchmark
-```
 
-### Run Task 4: Recommendation System
+# Play against AI (you go first)
+python tictactoe_ai.py --play
+
+# AI goes first
+python tictactoe_ai.py --play --ai-first
+
+# AI vs AI perfect play demo
+python tictactoe_ai.py --demo
+
+# Benchmark: Alpha-Beta vs plain Minimax
+python tictactoe_ai.py --benchmark
+```
+</details>
+
+<details>
+<summary><strong>Task 4: Recommendation System</strong></summary>
+
 ```bash
 cd task4_recommendation
-python recommender.py          # Full demo with sample movie data
-python recommender.py --demo   # Same (explicit flag)
+
+# Full demo with 10 users, 10 movies
+python recommender.py --demo
 ```
+</details>
 
 ---
 
@@ -60,62 +102,85 @@ python recommender.py --demo   # Same (explicit flag)
 ```
 CODSOFT_TASKSNO/
 ├── README.md                    # This file
+├── requirements.txt             # Python dependencies
+├── streamlit_app.py             # Web app (all 3 tasks)
 ├── task1_chatbot/
-│   └── chatbot.py               # Rule-based chatbot (~400 lines)
+│   └── chatbot.py               # ~400 lines — Rule-based chatbot
 ├── task2_tictactoe/
-│   └── tictactoe_ai.py          # Minimax AI with Alpha-Beta (~450 lines)
+│   └── tictactoe_ai.py          # ~450 lines — Minimax + Alpha-Beta
 └── task4_recommendation/
-    └── recommender.py           # Hybrid recommender system (~600 lines)
+    └── recommender.py           # ~600 lines — Hybrid recommender
 ```
 
 ---
 
 ## 🎯 Task Details
 
-### Task 1: Rule-Based Chatbot (`task1_chatbot/chatbot.py`)
-- **Patterns covered:** Greetings, goodbyes, thanks, name, time/date, weather (mock), help, jokes, wellbeing, age, preferences, learning/AI, compliments
-- **Features:** Pattern matching with regex, contextual responses, conversation history, extensible rule system
-- **Demo:** Run `python chatbot.py --demo` for a quick showcase
+### Task 1: Rule-Based Chatbot
+**`task1_chatbot/chatbot.py`**
 
-### Task 2: Tic-Tac-Toe AI (`task2_tictactoe/tictactoe_ai.py`)
-- **Algorithm:** Minimax with Alpha-Beta Pruning
-- **Features:** Unbeatable AI, human vs AI, AI vs AI demo, node evaluation benchmark, optional Alpha-Beta toggle
-- **Performance:** Alpha-Beta reduces nodes evaluated by ~70% vs plain Minimax
+- **13 intent categories** via regex pattern matching
+- Greetings, goodbyes, thanks, identity, time/date, weather (mock), help, jokes, wellbeing, age, preferences, learning/AI, compliments
+- Conversation history tracking, contextual responses, extensible rule system
+- **Run:** `python chatbot.py --demo`
 
-### Task 4: Recommendation System (`task4_recommendation/recommender.py`)
-- **Methods:** 
-  - User-based Collaborative Filtering (Pearson correlation)
-  - Item-based Collaborative Filtering
-  - Content-Based Filtering (cosine similarity on item features)
-  - Hybrid (weighted combination)
-- **Features:** Movie recommendation demo with synthetic data, evaluation metrics (Precision@K, Recall@K, RMSE)
-- **Demo:** Generates sample users with preferences, shows recommendations from each method
+### Task 2: Tic-Tac-Toe AI
+**`task2_tictactoe/tictactoe_ai.py`**
 
----
+- **Minimax algorithm** with **Alpha-Beta Pruning**
+- Unbeatable AI opponent (optimal play → always draw or win)
+- Human vs AI, AI vs AI demo, node evaluation benchmark
+- **~70% node reduction** vs plain Minimax
+- **Run:** `python tictactoe_ai.py --play`
 
-## 📝 Submission Checklist (CodSoft)
+### Task 4: Hybrid Recommendation System
+**`task4_recommendation/recommender.py`**
 
-- [x] **≥3 tasks completed** (3/5 done)
-- [x] **GitHub repo named `CODSOFT_TASKSNO`** ✅ https://github.com/ashishkushwaha138/CODSOFT_TASKSNO
-- [ ] **Video demo** — Record yourself running each task (see demo commands above)
-- [ ] **LinkedIn post** — Upload video, add `#codsoft` hashtag, tag @CODSOFT, include repo link
-- [ ] **Submit form** — Use the Google Form link emailed by CodSoft
+| Method | Technique |
+|--------|-----------|
+| Collaborative Filtering | User-based & Item-based (Pearson correlation) |
+| Content-Based Filtering | Cosine similarity on item feature vectors |
+| Hybrid | Weighted combination (default 0.6 CF + 0.4 CB) |
 
----
-
-## 🎬 Demo Video Script (Suggested)
-
-1. **Intro (10s):** "Hi, this is my CodSoft AI Internship submission — 3 tasks completed"
-2. **Task 1 Chatbot (30s):** Run `python chatbot.py --demo`, show greetings, time, jokes, help
-3. **Task 2 Tic-Tac-Toe (45s):** Run `python tictactoe_ai.py --play`, play a game, show AI blocks wins
-4. **Task 4 Recommender (45s):** Run `python recommender.py`, show hybrid recommendations for different users
-5. **Close (10s):** "Repo at github.com/ashishkushwaha138/CODSOFT_TASKSNO — thanks for watching!"
+- **Demo data:** 10 movies × 10 users with genre preferences
+- **Evaluation:** Precision@5, Recall@5, RMSE
+- **Run:** `python recommender.py --demo`
 
 ---
 
-## 🌐 Live Demo
+## 🛠 Tech Stack
 
-**Streamlit Cloud:** https://codsofttasks.streamlit.app/
+| Category | Tools |
+|----------|-------|
+| **Language** | Python 3.8+ |
+| **Core Logic** | Standard library only (Tasks 1 & 2) |
+| **Data/ML** | NumPy, Pandas, scikit-learn concepts (Task 4) |
+| **Web App** | Streamlit |
+| **Deployment** | Streamlit Cloud (free tier) |
+
+---
+
+## 📝 Submission Checklist
+
+- [x] **≥3 tasks completed** (3/5)
+- [x] **GitHub repo named `CODSOFT_TASKSNO`**
+- [x] **Live demo deployed** (Streamlit Cloud)
+- [ ] **Video demo** — Record terminal + web app
+- [ ] **LinkedIn post** — Add `#codsoft`, tag `@CODSOFT`, include repo link
+- [ ] **Submit Google Form** — Link emailed by CodSoft
+
+---
+
+## 🎬 Suggested Video Script (~3 min)
+
+| Segment | Duration | Commands |
+|---------|----------|----------|
+| Intro | 10s | — |
+| Task 1 Terminal | 30s | `python chatbot.py --demo` → interactive |
+| Task 2 Terminal | 45s | `python tictactoe_ai.py --play` → play game → `--benchmark` |
+| Task 4 Terminal | 45s | `python recommender.py --demo` |
+| Streamlit Web App | 45s | Navigate all 3 tabs at live URL |
+| Close | 10s | Show GitHub repo URL |
 
 ---
 
@@ -125,5 +190,14 @@ Educational project — CodSoft AI Internship 2026
 
 ---
 
-**Repository:** https://github.com/ashishkushwaha138/CODSOFT_TASKSNO  
-**Internship Portal:** www.codsoft.in
+## 🔗 Links
+
+| | |
+|---|---|
+| **GitHub Repository** | https://github.com/ashishkushwaha138/CODSOFT_TASKSNO |
+| **Live Demo (Streamlit)** | https://codsofttasks.streamlit.app/ |
+| **CodSoft Portal** | https://www.codsoft.in |
+
+---
+
+*Built for CodSoft AI Virtual Internship 2026*
